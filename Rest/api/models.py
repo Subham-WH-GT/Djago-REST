@@ -4,7 +4,7 @@ from django.db import models
 
 class PlayerModel(models.Model):
     playerName=models.CharField(max_length=25)
-    jerseyNumber=models.IntegerField
+    jerseyNumber=models.IntegerField()
     country=models.CharField(max_length=20)
 
     def __str__(self):
