@@ -131,3 +131,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     ],
 #     ''
 # }
+
+REST_FRAMEWORK={
+    'DEFAULT_THROTTLE_RATES':{
+        'anon': '2/min',
+        'user': '5/min',
+    }
+}
+
+
